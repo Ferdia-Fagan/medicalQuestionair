@@ -4,8 +4,8 @@ from tkinter import Tk, ttk
 import tkinter as tk
 from tkinter import filedialog
 
-from Application.windows.popups.CreateQuestionairPopup import CreateQuestionairPopup
-from Application.windows.WindowBase import WindowBase
+from application.windows.popups.CreateQuestionairPopup import CreateQuestionairPopup
+from application.windows.WindowBase import WindowBase
 
 
 class MenuWindow(Frame,WindowBase):
@@ -20,7 +20,7 @@ class MenuWindow(Frame,WindowBase):
         # self.bigFrame = Frame(parent)
         super().__init__(parent,bg="blue",width=500,height=500)
         self.pack_propagate(0)
-        self.pack(fill="none", expand=True)
+        self.pack(fill=Y, expand=True)
 
         for menu_opt,x in menu_options:
             button = Button(self, text=menu_opt,command=x)
@@ -30,7 +30,7 @@ class MenuWindow(Frame,WindowBase):
 
     def create(self):
         print("create")
-        popup = CreateQuestionairPopup(self.parent)
+        popup = CreateQuestionairPopup(self)
         # popup.pack(expand=True)
         popup.place(relx=.5, rely=.5, relheight=0.5,relwidth=0.5,anchor="center")  # center
         self.pack()

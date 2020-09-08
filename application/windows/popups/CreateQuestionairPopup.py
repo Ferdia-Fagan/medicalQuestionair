@@ -1,12 +1,9 @@
 from tkinter import *
-from tkinter import Tk, ttk
 import tkinter as tk
 from tkinter import filedialog
 
-import tkinter.font as tkfont
-
-from windows.QuestionaireGeneratorWindow import QuestionaireGeneratorWindow
-from windows.WindowBase import WindowBase
+from application.windows.questionnaire.QuestionaireGeneratorWindow import QuestionaireGeneratorWindow
+from application.windows.WindowBase import WindowBase
 
 
 class CreateQuestionairPopup(Frame,WindowBase):

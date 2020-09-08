@@ -1,4 +1,4 @@
-from Application.questionnaire.question_types.Question import Question
+from application.questionnaire.question_types.Question import Question
 
 
 class MultiQuestionsQuestion:

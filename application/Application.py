@@ -1,7 +1,8 @@
 from tkinter import *
 
-from Application.windows.MenuWindow import MenuWindow
-from Application.windows.WindowBase import WindowBase
+from application.windows.MenuWindow import MenuWindow
+from application.windows.WindowBase import WindowBase
+from application.windows.questionnaire.QuestionaireGeneratorWindow import QuestionaireGeneratorWindow
 
 
 class ApplicationState:
@@ -10,7 +11,7 @@ class ApplicationState:
         self.root = Tk()
 
         self.root.geometry("1280x850")
-        self.root.title("Application")
+        self.root.title("application")
 
         WindowBase.set_application_controller(self)
 
@@ -26,7 +27,8 @@ class ApplicationState:
 
 
 if __name__ == '__main__':
-    inst = ApplicationState(MenuWindow)
+    # inst = ApplicationState(MenuWindow)
+    inst = ApplicationState(QuestionaireGeneratorWindow)
 
     # main_frame = Frame(root,bg="red", width=1000, height=600)
 
