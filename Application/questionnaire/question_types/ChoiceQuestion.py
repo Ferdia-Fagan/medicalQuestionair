@@ -1,4 +1,4 @@
-from questionnaire.question_types.Question import Question
+from Application.questionnaire.question_types.Question import Question
 
 
 class ChoiceQuestion(Question):

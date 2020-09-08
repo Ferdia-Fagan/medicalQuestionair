@@ -1,7 +1,7 @@
 from tkinter import *
 
-from windows.MenuWindow import MenuWindow
-from windows.WindowBase import WindowBase
+from Application.windows.MenuWindow import MenuWindow
+from Application.windows.WindowBase import WindowBase
 
 
 class ApplicationState:

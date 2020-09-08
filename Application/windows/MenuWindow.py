@@ -4,8 +4,8 @@ from tkinter import Tk, ttk
 import tkinter as tk
 from tkinter import filedialog
 
-from windows.popups.CreateQuestionairPopup import CreateQuestionairPopup
-from windows.WindowBase import WindowBase
+from Application.windows.popups.CreateQuestionairPopup import CreateQuestionairPopup
+from Application.windows.WindowBase import WindowBase
 
 
 class MenuWindow(Frame,WindowBase):
